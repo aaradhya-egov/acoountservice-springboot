@@ -1,0 +1,128 @@
+curl --location 'http://localhost:8080/birth-registration/birth/registration/v1/_create' \
+--header 'Content-Type: application/json' \
+--data '{
+   "RequestInfo": {
+        "apiId": "Rainmaker",
+        "authToken":"e84b62c9-ddc9-4a8c-9411-40bce8d80a2d" ,
+        "userInfo": {
+        "id": 1048,
+        "uuid": "73238b8d-740d-48ca-a04b-815bb55531bc",
+        "userName": "SuperUDevUser007",
+        "name": "User with all roles",
+        "mobileNumber": "3989999998",
+        "emailId": null,
+        "ts":"ssss",
+        "ver":"s",
+        "action":"saa",
+        "locale": null,
+        "type": "EMPLOYEE",
+        "roles": [
+            {
+                "name": "Field Supervisor",
+                "code": "FIELD_SUPERVISOR",
+                "tenantId": "mz"
+            },
+            {
+                "name": "National Supervisor",
+                "code": "NATIONAL_SUPERVISOR",
+                "tenantId": "mz"
+            },
+            {
+                "name": "HELPDESK USER",
+                "code": "HELPDESK_USER",
+                "tenantId": "mz"
+            },
+            {
+                "name": "HRMS Admin",
+                "code": "HRMS_ADMIN",
+                "tenantId": "mz"
+            },
+            {
+                "name": "Registrar",
+                "code": "REGISTRAR",
+                "tenantId": "mz"
+            },
+            {
+                "name": "District Supervisor",
+                "code": "DISTRICT_SUPERVISOR",
+                "tenantId": "mz"
+            },
+            {
+                "name": "System Administrator",
+                "code": "SYSTEM_ADMINISTRATOR",
+                "tenantId": "mz"
+            },
+            {
+                "name": "Super User",
+                "code": "SUPERUSER",
+                "tenantId": "mz"
+            },
+            {
+                "name": "Distributor",
+                "code": "DISTRIBUTOR",
+                "tenantId": "mz"
+            },
+            {
+                "name": "L2 Support",
+                "code": "L2_SUPPORT",
+                "tenantId": "mz"
+            },
+            {
+                "name": "Warehouse Manager",
+                "code": "WAREHOUSE_MANAGER",
+                "tenantId": "mz"
+            },
+            {
+                "name": "PGR Administrator",
+                "code": "PGR-ADMIN",
+                "tenantId": "mz"
+            },
+            {
+                "name": "Provincial Supervisor",
+                "code": "PROVINCIAL_SUPERVISOR",
+                "tenantId": "mz"
+            }
+        ],
+        "active": true,
+        "tenantId": "mz",
+        "permanentCity": null
+    },
+        "msgId": "1694116339938|en_IN",
+        "plainAccessRequest": {}
+    },
+    "BirthRegistrationApplications": [
+        { 
+            "tenantId": "pg.citya",
+            "timeOfBirth": 12072001,
+            "babyFirstName": "Rahul",
+            "babyLastName": "Singh",
+            "doctorName": "Dr. Ram",
+            "hospitalName": "Fortis",
+            "placeOfBirth": "Palampur",
+            "father": {
+                "name": "Abhay2",
+                "userName": "testerrrr_xyz",
+                "mobileNumber": "9230011254",
+                "tenantId":"pg.citya",
+                "roles": [
+                    {
+                        "tenantId":"pg.citya",
+                        "code": "CITIZEN"
+                    }
+                ]
+            },
+            "mother": {
+                "name": "Amita",
+                "userName": "tester_xyz",
+                "mobileNumber": "9230051254",
+                "tenantId":"pg.citya",
+                "roles": [
+                    {
+                        "tenantId":"pg.citya",
+                        "code": "CITIZEN"
+                    }
+                ]
+            }
+        }
+    ]
+}'

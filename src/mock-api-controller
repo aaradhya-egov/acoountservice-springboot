@@ -45,7 +45,7 @@ import java.nio.charset.StandardCharsets;
 
                 @RequestMapping(value="/birth/registration/v1/_create", method = RequestMethod.POST)
                 public ResponseEntity<String> birthRegistrationV1CreatePost(@Parameter(in = ParameterIn.DEFAULT, description = "Details for the new Birth Registration Application(s) + RequestInfo meta data.", required=true, schema=@Schema()) @Valid @RequestBody BirthRegistrationRequest body) {
-                                InputStream mockDataFile = nulla;
+                                InputStream mockDataFile = null;
                             try {
                                 Resource resource1 = resourceLoader.getResource("classpath:mockData.json");
                                 InputStream inputStream = null;
